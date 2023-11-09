@@ -1,0 +1,129 @@
+.map__svg path {
+  transition: 0.3s;
+}
+
+.map {
+  height: unset;
+  padding: 40px;
+}
+
+.here {
+  fill: #9d48df;
+  cursor: pointer;
+  position: relative;
+}
+
+.here:hover {
+  fill: #7e00df;
+}
+
+.map__item {
+  display: inline;
+}
+
+.map__btn {
+  background-color: #adadad;
+  padding: 15px 25px;
+  border-radius: 15px;
+  border: 1px solid #8200e8;
+  font-size: 18px;
+  font-family: "montserrat";
+  font-weight: 500;
+}
+
+.map__svg {
+  margin-bottom: 40px;
+  width: 100%;
+  min-width: 1400px;
+}
+
+.map__btn.here {
+  background-color: #9d48df;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.here.map__btn:hover {
+  background-color: #7e00df;
+}
+
+.map__list {
+  justify-content: space-between;
+}
+
+.map .container {
+  /* padding: 30px; */
+  position: relative;
+  overflow-x: auto;
+  /* border: 1px solid; */
+}
+
+.map__svg::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #9d48df;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 1024px) {
+  .map {
+    padding: 0 15px;
+  }
+
+  .map__list {
+    flex-wrap: wrap;
+  }
+
+  .map__item {
+    width: 45%;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .map__btn {
+    font-size: 16px;
+  }
+
+}
+
+
+@media (max-width: 560px) {
+  .map__btn {
+    font-size: 14px;
+  }
+}
+
+.map__comment-here {
+  font-family: 'montserrat';
+}
+
+.map__comment-here span {
+  width: 15px ;
+  height: 15px;
+
+  display: inline-block;
+  background-color: #7e00df;
+  margin-right: 5px;
+}
+
+.map__comment-nothere span {
+  width: 15px ;
+  height: 15px;
+
+  display: inline-block;
+  background-color: #adadad;
+  margin-right: 5px;
+}
+
+.map__comment-nothere {
+  font-family: 'montserrat';
+}
+
+.map__comments {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+}

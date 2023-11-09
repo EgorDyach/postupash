@@ -1,0 +1,32 @@
+.joke__btn {
+    font-family: 'montserrat';
+    background-color: #8200e8;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.joke {
+    font-family: 'montserrat';
+    color: #333;
+    font-size: 17px;
+
+}
+
+.joke__title {
+    font-size: 24px;
+    font-family: 'montserrat';
+    color: #333;
+    margin-bottom: 30px;
+
+}
+
+.jokes .container {
+    text-align: center;
+}
+
+.jokes {
+    padding: 40px 0;
+}
+
